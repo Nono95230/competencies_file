@@ -1,0 +1,23 @@
+uuid: c14fe7be-6549-44c8-b778-96741a1371c4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_xp_pro_current_job
+    - paragraphs.paragraphs_type.ptype_experience_pro
+id: paragraph.ptype_experience_pro.field_xp_pro_current_job
+field_name: field_xp_pro_current_job
+entity_type: paragraph
+bundle: ptype_experience_pro
+label: 'Poste actuel'
+description: "Coché cette case si cette mission correspond à votre poste actuel.\r\nSi coché, cela fera disparaître le champs Date de fin."
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

@@ -1,0 +1,9 @@
+uuid: de89f852-0a63-49a0-8205-942d17e91943
+langcode: fr
+status: true
+dependencies: {  }
+id: ptype_experience_pro
+label: 'Expérience Professionnelle'
+icon_uuid: null
+description: 'Ce paragraph type sert à paramétrer les champs servant à compléter la partie Expériences Professionnelles du Dossier de Compétence'
+behavior_plugins: {  }

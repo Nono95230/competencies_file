@@ -1,0 +1,19 @@
+uuid: acac9239-229b-46a1-956c-7bded3283d33
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_xp_pro_business_segment
+    - paragraphs.paragraphs_type.ptype_experience_pro
+id: paragraph.ptype_experience_pro.field_xp_pro_business_segment
+field_name: field_xp_pro_business_segment
+entity_type: paragraph
+bundle: ptype_experience_pro
+label: 'Secteurs d''activité'
+description: 'Indiquer le secteur d''activité de cette mission'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
