@@ -1,0 +1,18 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.competencies_file
+  module:
+    - user
+id: node.competencies_file.teaser
+targetEntityType: node
+bundle: competencies_file
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

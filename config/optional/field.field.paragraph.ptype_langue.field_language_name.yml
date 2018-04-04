@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_language_name
     - paragraphs.paragraphs_type.ptype_langue
-    - taxonomy.vocabulary.langue
+    - taxonomy.vocabulary.langues
 id: paragraph.ptype_langue.field_language_name
 field_name: field_language_name
 entity_type: paragraph

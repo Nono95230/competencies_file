@@ -1,0 +1,4 @@
+hook_install:
+  vocabulary: 'langues'
+hook_entity_type_insert:
+  role: 'drupalien'
