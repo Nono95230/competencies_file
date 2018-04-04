@@ -2,3 +2,35 @@ hook_install:
   vocabulary: 'langues'
 hook_entity_type_insert:
   role: 'drupalien'
+  paragraph_type: 'ptype_competence_technique'
+  content_type: 'competencies_file'
+  content_title: 'Dossier de compétences - Nom Prénom'
+  job_title: 'Développeur Drupal 8'
+ptype_competence_technique:
+  1:
+    skill_section: "Méthodologies"
+    skill_competences: "Agile/Scrum"
+  2:
+    skill_section: "Modélisation"
+    skill_competences: "Merise, UML"
+  3:
+    skill_section: "Langages"
+    skill_competences: "Php5, Php7, JavaScript, Html5, Css3, jQuery"
+  4:
+    skill_section: "Librairies CSS & JS"
+    skill_competences: "Bootstrap, Materialize, jQuery"
+  5:
+    skill_section: "Frameworks"
+    skill_competences: "Laravel5, Symfony2, AngularJS"
+  6:
+    skill_section: "CMS/CMF"
+    skill_competences: "Wordpress, Drupal7, Drupal8"
+  7:
+    skill_section: "Outils de développement"
+    skill_competences: "SublimeText, Git, Trello, Platform, Jira, Redmine, Cmder"
+  8:
+    skill_section: "SGBD"
+    skill_competences: "MySql"
+  9:
+    skill_section: "Systèmes"
+    skill_competences: "Mac OS, Windows, Ubuntu"
