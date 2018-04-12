@@ -3,14 +3,6 @@
 /** @file ...*/
 
 
-
-use Drupal\taxonomy\Entity\Vocabulary;
-use Drupal\taxonomy\Entity\Term;
-use Drupal\node\Entity\NodeType;
-use Drupal\node\Entity\Node;
-
-
-
 function competencies_file_install(){
 
 	//////////////////////////////////////////////////////
@@ -23,7 +15,7 @@ function competencies_file_install(){
 
 	// Nom du vocabulaire
 	$vocabularyMachineName = 'langues';
-  $vocabularies = Vocabulary::loadMultiple();
+  $vocabularies = \Drupal\taxonomy\Entity\Vocabulary::loadMultiple();
 
   // On vérifie que le vocabulaire en question existe bien
   if (isset($vocabularies[$vocabularyMachineName])) {
@@ -61,7 +53,7 @@ function competencies_file_install(){
 
 	  // On crée les termes si nécessaire
 	  foreach ((array)$termsLangue as $term_name) {
-	    $term = Term::create([
+	    $term = \Drupal\taxonomy\Entity\Term::create([
 	      'vid' => $vocabularyMachineName,
 	      'name' => $term_name,
 	      'weight' => $weight
@@ -73,12 +65,36 @@ function competencies_file_install(){
   }
 
 
-	//////////////////////////////////////////////////////
-	//                                                  //
-	//                Générer les termes                //
+  //////////////////////////////////////////////////////
+  //                                                  //
+  //                Générer les termes                //
   //        du vocabulaire de taxonomie Langue        //
-	//                        END                       //
-	//                                                  //
-	//////////////////////////////////////////////////////
+  //                        END                       //
+  //                                                  //
+  //////////////////////////////////////////////////////
+
+
+  //////////////////////////////////////////////////////
+  //                                                  //
+  //                  Placer le BLOC                  //
+  //              Dossier de compétences              //
+  //     Dans la region content du theme en cours     //
+  //                       START                      //
+  //                                                  //
+  //////////////////////////////////////////////////////
+
+
+
+
+
+  //////////////////////////////////////////////////////
+  //                                                  //
+  //                  Placer le BLOC                  //
+  //              Dossier de compétences              //
+  //     Dans la region content du theme en cours     //
+  //                        END                       //
+  //                                                  //
+  //////////////////////////////////////////////////////
+
 
 }

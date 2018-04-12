@@ -82,7 +82,7 @@ function createParagraph($userId){
 	foreach ($configParas as $configPara) {
 
 	  $paragraph = Paragraph::create([
-	      'type' => 'ptype_competence_technique',
+	      'type' => $paraFieldName,
 	      'uid' => [
 	          'target_id' => $userId
 	      ],
@@ -94,6 +94,7 @@ function createParagraph($userId){
 	      ],
 	  ]);
 	  $paragraph->save();
+
 	  $paraFormattedValue[] = array(
       'target_id' => $paragraph->id(),
       'target_revision_id' => $paragraph->getRevisionId(),
@@ -103,30 +104,150 @@ function createParagraph($userId){
 	return $paraFormattedValue;
 }
 
-       
 
-/*
 
 // Utile pour afficher les valeurs de certains champs d'un contenu déjà créer
 // S'utilise sur la page d'un noeud en particulier
-function competencies_file_node_load(array $entities, $entity_type_id){
+function competencies_file_node_load(array $entities/*, $entity_type_id*/){
 
-  $field = $entities[1]->get('field_competencies_file_skill')->getValue();
-  $ids = [];
-  foreach ($field as $d){
-      $ids[] = $d['target_id'];
+
+  $configViews      = \Drupal::config('competencies_file.config')->get('hook_install.views');
+  $themeMachineName = \Drupal::service('theme.manager')->getActiveTheme()->getName();
+
+  // On parcourt le tableau des vues à placer dans des blocs
+  foreach ($configViews as $key => $configView) {
+
+    // On récupère les variables nécessaire au placement du bloc pour la vue en cours
+    $blockRegion  = $configView['block_region'];
+    $viewType     = $configView['view_Type'];
+    $viewId       = $configView['view_Id'];
+    $viewDisplay  = $configView['view_Display'];
+
+    // On récupère les variables de visibilité du bloc pour la vue en cours
+    $configVisibility = $configView['visibility'];
+
+    // On récupère les variables de visibilité
+    // liées aux rôles pour la vue en cours
+    $getRoles       = $configVisibility['roles'];
+    $rolesList      = array();
+    $getRolesNegate = $configVisibility['roles_negate'];
+
+    // S'il existe une visibilité liée aux roles,
+    // Alors on initialise une variable listant les rôles
+    if (isset($getRoles)) {
+      foreach ($getRoles as $role) {
+        $rolesList[] = $role['name'];
+      }
+    }
+
+    // On récupère les variables de visibilité
+    // liées aux pages pour la vue en cours
+    $getPages       = $configVisibility['pages'];
+    $pagesList      = array();
+    $getPagesNegate = $configVisibility['pages_negate'];
+
+    // S'il existe une visibilité liée aux pages,
+    // Alors on initialise une variable listant les pages
+    if (isset($getPages)) {
+      foreach ($getPages as $page) {
+        $rolesList[] = $page['url'];
+      }
+    }
+
+    // On récupère les variables de visibilité
+    // liées aux types de contenu pour la vue en cours
+    $getContentTypes        = $configVisibility['content_types'];
+    $contentTypesList       = array();
+    $getContentTypesNegate  = $configVisibility['content_types_negate'];
+
+    // S'il existe une visibilité liée aux types de contenu,
+    // Alors on initialise une variable listant les types de contenu
+    if (isset($getContentTypes)) {
+      foreach ($getContentTypes as $contentType) {
+        $contentTypesList[] = $contentType['name'];
+      }
+    }
+
+
+
+    // // On récupère un tableau des vues activées
+    // $enabledView = \Drupal\views\Views::getEnabledViews();
+    // // On vérifie que l'id de la vue qu'on souhaite utiliser
+    // // fait bien partie d'une vue activée
+    // if (array_key_exists( $viewId, $enabledView)) {
+    //   // On récupère un tableau des affichages disponibles pour la vue en cours
+    //   $getViewDisplays = \Drupal\views\Views::getEnabledViews()[$viewId]->get('display');
+    //   // On vérifie que l'affichage souhaité existe bien dans la vue en cours
+    //   if (array_key_exists($viewDisplay, $getViewDisplays)) {
+
+    //   }
+    // }
+
+
+
+
+    $blockValues = array(
+      // A unique ID for the block instance.
+      'id' => 'views_block__view_block_competencies_file_block_1',
+      // The plugin block id as defined in the class.
+      'plugin' => 'views_block:view_block_competencies_file-block_1',
+      'status' => 'true',
+      'settings' => array(
+        'id' =>'views_block:view_block_competencies_file-block_1',
+        'label' => '',
+        'provider' => 'views',
+        'label_display' => 'visible',
+        'views_label' => '',
+        'items_per_page' => 'none',
+        'context_mapping' => array(),
+      ),
+      // The machine name of the theme region.
+      'region' => 'content',
+      // The machine name of the theme.
+      'theme' => 'bootstrap_child',
+      'weight' => 0,
+      'visibility' => array(
+        'request_path' => array(
+          'id' => 'request_path',
+          'pages' => '/user/*',
+          'negate' => false,
+          'context_mapping' => array(),
+        ),
+        'user_role' => array(
+          'id' => 'user_role',
+          'roles'=> array(
+            'drupalien' => 'drupalien',
+          ),
+          'negate' => false,
+          'context_mapping' => array(
+            'user' => '@user.current_user_context:current_user'
+          ),
+        ),
+      ),
+    );
+
+    //$block = \Drupal\block\Entity\Block::create($blockValues);
+    //$block->save();
+
+
   }
-	
-	$paras = Paragraph::loadMultiple($ids);
-	foreach ($paras as $para) {
-		kint($para->get('id')->getValue());
-		kint($para->get('field_skill_section')->getValue());
-		kint($para->get('field_skill_competences')->getValue());
-		kint($para->get('uid')->getValue());
-	}
 
-	die();
+
+ //  $field = $entities[1]->get('field_competencies_file_skill')->getValue();
+ //  $ids = [];
+ //  foreach ($field as $d){
+ //      $ids[] = $d['target_id'];
+ //  }
+
+	// $paras = Paragraph::loadMultiple($ids);
+	// foreach ($paras as $para) {
+	// 	kint($para->get('id')->getValue());
+	// 	kint($para->get('field_skill_section')->getValue());
+	// 	kint($para->get('field_skill_competences')->getValue());
+	// 	kint($para->get('uid')->getValue());
+	// }
+
+	// die();
+
 
 }
-
-*/
