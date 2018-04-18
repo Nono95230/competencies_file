@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: XDNhZAZ66H-OxJ2L_9-AbGPUbOjB71AIsm5YtE9RCEo
 id: paragraph.field_skill_competences
 field_name: field_skill_competences
 entity_type: paragraph

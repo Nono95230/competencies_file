@@ -10,6 +10,8 @@ dependencies:
     - paragraphs.paragraphs_type.ptype_formation_diplome
   module:
     - datetime
+_core:
+  default_config_hash: Ynjsz5Hv4YYLXYUWHcV1zF2kdFxlZ4-hoLo8Q874294
 id: paragraph.ptype_formation_diplome.default
 targetEntityType: paragraph
 bundle: ptype_formation_diplome

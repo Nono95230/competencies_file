@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.ptype_formation_diplome
   module:
     - datetime
+_core:
+  default_config_hash: z2mfjQbxJVuyLlFyyNij06GXoP-NM4YswYlY4to_syk
 id: paragraph.ptype_formation_diplome.field_course_date_start
 field_name: field_course_date_start
 entity_type: paragraph

@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: J7RB-whAALIAMw_B7kexaW0XLqAXNg0jhoZn4GhQH-s
 id: paragraph.field_xp_pro_enterprise
 field_name: field_xp_pro_enterprise
 entity_type: paragraph

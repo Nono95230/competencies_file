@@ -2,6 +2,8 @@ uuid: 07ecdc7d-0379-463a-872f-789ed8f2489f
 langcode: fr
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: ss8BtJlPlBBpM5ypLjxhDJHz5rkC-6JiW-0A67tz7iA
 id: ptype_formation_diplome
 label: 'Formation & Diplôme'
 icon_uuid: null

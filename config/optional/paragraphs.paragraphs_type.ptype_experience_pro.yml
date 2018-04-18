@@ -2,6 +2,8 @@ uuid: de89f852-0a63-49a0-8205-942d17e91943
 langcode: fr
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: BWa85SuADoX0FZrxkLlTlW-EBWU9sGsi8N6afNeGdU4
 id: ptype_experience_pro
 label: 'Expérience Professionnelle'
 icon_uuid: null

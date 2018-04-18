@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.storage.paragraph.field_xp_pro_enterprise
     - paragraphs.paragraphs_type.ptype_experience_pro
+_core:
+  default_config_hash: Zkr-jLzqxgaZBPAGIftg8UbReMowKb3cdjIewAOlVTM
 id: paragraph.ptype_experience_pro.field_xp_pro_enterprise
 field_name: field_xp_pro_enterprise
 entity_type: paragraph
 bundle: ptype_experience_pro
 label: Entreprise
-description: 'Indiquer l''entreprise où la mission est/était réalisé'
+description: 'Indiquez l''entreprise où la mission est/était réalisé'
 required: true
 translatable: false
 default_value: {  }

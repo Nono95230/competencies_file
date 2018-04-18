@@ -3,30 +3,30 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.paragraph.ptype_experience_pro.field_xp_pro_business_segment
+    - field.field.paragraph.ptype_experience_pro.field_job_description
     - field.field.paragraph.ptype_experience_pro.field_xp_pro_current_job
     - field.field.paragraph.ptype_experience_pro.field_xp_pro_date_end
     - field.field.paragraph.ptype_experience_pro.field_xp_pro_date_start
     - field.field.paragraph.ptype_experience_pro.field_xp_pro_enterprise
     - field.field.paragraph.ptype_experience_pro.field_xp_pro_environment_tech
     - field.field.paragraph.ptype_experience_pro.field_xp_pro_job_name
-    - field.field.paragraph.ptype_experience_pro.field_xp_pro_mission
-    - field.field.paragraph.ptype_experience_pro.field_xp_pro_tasks
     - paragraphs.paragraphs_type.ptype_experience_pro
   module:
     - datetime
+    - text
+_core:
+  default_config_hash: PQqaBahm79mCtWsyC6-zkGXPDTuyBAe4Z2BArbpigh4
 id: paragraph.ptype_experience_pro.default
 targetEntityType: paragraph
 bundle: ptype_experience_pro
 mode: default
 content:
-  field_xp_pro_business_segment:
-    weight: 6
-    label: inline
-    settings:
-      link_to_entity: false
+  field_job_description:
+    weight: 8
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: text_default
     region: content
   field_xp_pro_date_end:
     weight: 1
@@ -69,21 +69,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_xp_pro_mission:
-    weight: 4
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_xp_pro_tasks:
-    weight: 5
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
     region: content
 hidden:
   field_xp_pro_current_job: true

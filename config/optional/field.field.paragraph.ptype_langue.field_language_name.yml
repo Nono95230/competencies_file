@@ -5,7 +5,8 @@ dependencies:
   config:
     - field.storage.paragraph.field_language_name
     - paragraphs.paragraphs_type.ptype_langue
-    - taxonomy.vocabulary.langues
+_core:
+  default_config_hash: 9v89bo02RUDj83q74J9LeW8YwilsED52_gUrhzvfUb4
 id: paragraph.ptype_langue.field_language_name
 field_name: field_language_name
 entity_type: paragraph

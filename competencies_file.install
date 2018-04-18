@@ -74,27 +74,4 @@ function competencies_file_install(){
   //////////////////////////////////////////////////////
 
 
-  //////////////////////////////////////////////////////
-  //                                                  //
-  //                  Placer le BLOC                  //
-  //              Dossier de compétences              //
-  //     Dans la region content du theme en cours     //
-  //                       START                      //
-  //                                                  //
-  //////////////////////////////////////////////////////
-
-
-
-
-
-  //////////////////////////////////////////////////////
-  //                                                  //
-  //                  Placer le BLOC                  //
-  //              Dossier de compétences              //
-  //     Dans la region content du theme en cours     //
-  //                        END                       //
-  //                                                  //
-  //////////////////////////////////////////////////////
-
-
 }

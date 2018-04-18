@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.paragraph.field_skill_section
     - paragraphs.paragraphs_type.ptype_competence_technique
+_core:
+  default_config_hash: i9qjZzmWrf9ueg1ISmMa4f3X30LuJcQIXl_IQ_wkcD4
 id: paragraph.ptype_competence_technique.field_skill_section
 field_name: field_skill_section
 entity_type: paragraph

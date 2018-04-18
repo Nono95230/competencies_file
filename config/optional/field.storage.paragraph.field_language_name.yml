@@ -5,6 +5,8 @@ dependencies:
   module:
     - paragraphs
     - taxonomy
+_core:
+  default_config_hash: GtrYG5qwEGW61PX_SlG4vNWrksWnRFv8w5XieTGpjuQ
 id: paragraph.field_language_name
 field_name: field_language_name
 entity_type: paragraph

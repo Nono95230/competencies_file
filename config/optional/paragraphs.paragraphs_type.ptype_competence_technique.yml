@@ -2,6 +2,8 @@ uuid: 1bb7a775-b054-41b0-bde1-44f36b3d82aa
 langcode: fr
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 5w7Te-XG4tVr7QI1W4L-RTGhIPdhMsC9_e5BEDOJ1Pw
 id: ptype_competence_technique
 label: 'Compétence technique'
 icon_uuid: null

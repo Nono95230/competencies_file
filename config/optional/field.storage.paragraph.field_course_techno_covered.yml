@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: zoWZAdGgN5SMqL0lgHgn7huRqBW3EhSaUffCp5ccl14
 id: paragraph.field_course_techno_covered
 field_name: field_course_techno_covered
 entity_type: paragraph

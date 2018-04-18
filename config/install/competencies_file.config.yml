@@ -1,47 +1,5 @@
 hook_install:
   vocabulary: 'langues'
-  views:
-    1:
-      block_region: 'content'
-      view_type: 'views_block'
-      view_id: 'view_block_competencies_file'
-      view_display: 'block_1'
-      visibility:
-        roles:
-          1:
-            name: 'drupalien'
-        roles_negate: false
-
-        pages:
-          1:
-            url: '/user/*'
-        pages_negate: false
-
-        content_types:
-          1:
-            name: ''
-        content_types_negate: false
-    # 2:
-    #   block_region: 'content'
-    #   view_type: 'views_block'
-    #   view_id: 'view_block_competencies_file'
-    #   view_display: 'block_1'
-    #   visibility:
-    #     roles:
-    #       1:
-    #         name: 'drupalien'
-    #     roles_negate: false
-
-    #     pages:
-    #       1:
-    #         url: '/user/*'
-    #     pages_negate: false
-
-    #     content_types:
-    #       1:
-    #         name: ''
-    #     content_types_negate: false
-
 hook_entity_type_insert:
   role: 'drupalien'
   paragraph_type: 'ptype_competence_technique'

@@ -3,30 +3,31 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.paragraph.ptype_experience_pro.field_xp_pro_business_segment
+    - field.field.paragraph.ptype_experience_pro.field_job_description
     - field.field.paragraph.ptype_experience_pro.field_xp_pro_current_job
     - field.field.paragraph.ptype_experience_pro.field_xp_pro_date_end
     - field.field.paragraph.ptype_experience_pro.field_xp_pro_date_start
     - field.field.paragraph.ptype_experience_pro.field_xp_pro_enterprise
     - field.field.paragraph.ptype_experience_pro.field_xp_pro_environment_tech
     - field.field.paragraph.ptype_experience_pro.field_xp_pro_job_name
-    - field.field.paragraph.ptype_experience_pro.field_xp_pro_mission
-    - field.field.paragraph.ptype_experience_pro.field_xp_pro_tasks
     - paragraphs.paragraphs_type.ptype_experience_pro
   module:
     - datetime
+    - text
+_core:
+  default_config_hash: tFPq3WiFl0w45G1TJZ2nwbXnByCdVYjDxcPIT9BX0NQ
 id: paragraph.ptype_experience_pro.default
 targetEntityType: paragraph
 bundle: ptype_experience_pro
 mode: default
 content:
-  field_xp_pro_business_segment:
-    weight: 7
+  field_job_description:
+    weight: 5
     settings:
-      size: 60
+      rows: 20
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textarea
     region: content
   field_xp_pro_current_job:
     weight: 0
@@ -56,9 +57,9 @@ content:
     type: string_textfield
     region: content
   field_xp_pro_environment_tech:
-    weight: 8
+    weight: 6
     settings:
-      size: 60
+      size: 200
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
@@ -70,22 +71,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_xp_pro_mission:
-    weight: 5
-    settings:
-      size: 120
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_xp_pro_tasks:
-    weight: 6
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
     region: content
 hidden:
   created: true

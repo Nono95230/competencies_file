@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.storage.paragraph.field_xp_pro_environment_tech
     - paragraphs.paragraphs_type.ptype_experience_pro
+_core:
+  default_config_hash: _x2YffGjTAjpGsZ7shj0PD-WT2elrRDLXf3IDSwRMk8
 id: paragraph.ptype_experience_pro.field_xp_pro_environment_tech
 field_name: field_xp_pro_environment_tech
 entity_type: paragraph
 bundle: ptype_experience_pro
 label: 'Environnement technique'
-description: 'Indiquer l''environnement technique que vous avez utilisé durant la mission'
+description: 'Indiquez l''environnement technique que vous avez utilisé durant la mission'
 required: false
 translatable: false
 default_value: {  }

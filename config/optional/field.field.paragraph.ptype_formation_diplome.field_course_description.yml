@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.paragraph.field_course_description
     - paragraphs.paragraphs_type.ptype_formation_diplome
+_core:
+  default_config_hash: YYLID6-YzWGj6dIqSo0mB58ejK7AWJ2ts5EC8BuywAs
 id: paragraph.ptype_formation_diplome.field_course_description
 field_name: field_course_description
 entity_type: paragraph

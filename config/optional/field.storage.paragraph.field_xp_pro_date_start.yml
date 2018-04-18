@@ -5,6 +5,8 @@ dependencies:
   module:
     - datetime
     - paragraphs
+_core:
+  default_config_hash: 3nogA8N36RW49LoSMgiQcOou4Mwb0-vG74Ajcn87tno
 id: paragraph.field_xp_pro_date_start
 field_name: field_xp_pro_date_start
 entity_type: paragraph

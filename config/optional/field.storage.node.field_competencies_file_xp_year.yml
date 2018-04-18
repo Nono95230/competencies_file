@@ -5,6 +5,8 @@ dependencies:
   module:
     - datetime
     - node
+_core:
+  default_config_hash: bmaU80HWrCF99qgFdz62cXfNMUwJnrKNtQdWYmtiNR0
 id: node.field_competencies_file_xp_year
 field_name: field_competencies_file_xp_year
 entity_type: node

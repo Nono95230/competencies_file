@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.ptype_langue
   module:
     - options
+_core:
+  default_config_hash: 0fDy8Hyb2cdVYx41D9iF6n3_I8F4E-L6l9Ff6z3uPVo
 id: paragraph.ptype_langue.field_language_level
 field_name: field_language_level
 entity_type: paragraph

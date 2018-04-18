@@ -6,6 +6,8 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
+_core:
+  default_config_hash: lPh2qyBY1aDhx3XMPrCPIr131ISdtEYy2am4UgBV6gA
 id: node.field_competencies_file_xp_pro
 field_name: field_competencies_file_xp_pro
 entity_type: node

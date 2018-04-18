@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.ptype_langue
   module:
     - options
+_core:
+  default_config_hash: emp3NdHMoV3JkeyaQvYQzytgWDokQLtx51u_pcjcPdQ
 id: paragraph.ptype_langue.default
 targetEntityType: paragraph
 bundle: ptype_langue

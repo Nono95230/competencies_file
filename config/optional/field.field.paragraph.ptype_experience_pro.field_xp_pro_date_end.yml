@@ -7,12 +7,14 @@ dependencies:
     - paragraphs.paragraphs_type.ptype_experience_pro
   module:
     - datetime
+_core:
+  default_config_hash: DwvGPsFSvFwcv7JnvXubMkV8_485E-L5iBN_TckBYxw
 id: paragraph.ptype_experience_pro.field_xp_pro_date_end
 field_name: field_xp_pro_date_end
 entity_type: paragraph
 bundle: ptype_experience_pro
 label: 'Date de fin'
-description: "Indiquer la date de fin de la mission.\r\nSi cette mission est toujours en cours, laisser ce champs vide et cocher la case \"Poste Actuel\" !"
+description: "Indiquez la date de fin de la mission.\r\nSi cette mission est toujours en cours, ne renseignez pas de date et cochez la case \"Poste Actuel\" !"
 required: false
 translatable: true
 default_value: {  }

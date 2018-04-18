@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.competencies_file
+_core:
+  default_config_hash: ZmClDNk2Y_HeAuJndSqAEA9KQhJHMfuGcOlwN-PM8bg
 id: node.competencies_file.promote
 field_name: promote
 entity_type: node

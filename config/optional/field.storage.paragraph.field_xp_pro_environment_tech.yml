@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: HrZ-tWPxDbMxJe-dOiU6ko_X8BaMBsWvTpGSjwfxVvg
 id: paragraph.field_xp_pro_environment_tech
 field_name: field_xp_pro_environment_tech
 entity_type: paragraph

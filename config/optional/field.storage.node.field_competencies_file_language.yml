@@ -6,6 +6,8 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
+_core:
+  default_config_hash: DpsOQ8xXk77bbPfO79nsdHWfl01198fcYGNA3TSiE8Q
 id: node.field_competencies_file_language
 field_name: field_competencies_file_language
 entity_type: node

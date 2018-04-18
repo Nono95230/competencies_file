@@ -6,6 +6,8 @@ dependencies:
     - field.field.paragraph.ptype_langue.field_language_level
     - field.field.paragraph.ptype_langue.field_language_name
     - paragraphs.paragraphs_type.ptype_langue
+_core:
+  default_config_hash: ywb_sn8UaeqsQJpL1JbfPxQt-VclflUGK48N2QFKAjE
 id: paragraph.ptype_langue.default
 targetEntityType: paragraph
 bundle: ptype_langue
