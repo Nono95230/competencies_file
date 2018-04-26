@@ -13,26 +13,17 @@ function competencies_file_install(){
 	//                                                  //
 	//////////////////////////////////////////////////////
 
-	// Nom du vocabulaire
-	$vocabularyMachineName = 'langues';
-  $vocabularies = \Drupal\taxonomy\Entity\Vocabulary::loadMultiple();
 
+  $vocabularies = \Drupal\taxonomy\Entity\Vocabulary::loadMultiple();
+  $config = \Drupal::config('competencies_file.config')->get('hook_install');
+
+  // Nom du vocabulaire
+  $vocabularyMachineName = $config['vocabulary'];
   // On vérifie que le vocabulaire en question existe bien
   if (isset($vocabularies[$vocabularyMachineName])) {
 
   	// Tableau listant les termes à créer
-	  $termsLangue = [
-      'Allemand',
-      'Anglais',
-      'Arabe',
-      'Chinois',
-      'Espagnol',
-      'Français',
-      'Indien',
-      'Italien',
-      'Japonais',
-      'Portugais'
-    ];
+	  $termsLanguageList = array_values($config['terms_language']);
 
 	  // Récupère les termes du vocabulaire en question(s'ils existent)
     $properties['vid'] = $vocabularyMachineName;
@@ -42,9 +33,9 @@ function competencies_file_install(){
     // on vérifie qu'il n'existe pas avant.
 	  foreach ((array)$terms as $term) {
 	    // S'il trouve des correspondances :
-	    if ( ($key = array_search($term->getName(), $termsLangue)) !== false) {
+	    if ( ($key = array_search($term->getName(), $termsLanguageList)) !== false) {
     		// alors on retire ces termes du tableau
-        unset($termsLangue[$key]);
+        unset($termsLanguageList[$key]);
 	    }
 	  }
 
@@ -52,7 +43,7 @@ function competencies_file_install(){
 	  $weight = 0;
 
 	  // On crée les termes si nécessaire
-	  foreach ((array)$termsLangue as $term_name) {
+	  foreach ((array)$termsLanguageList as $term_name) {
 	    $term = \Drupal\taxonomy\Entity\Term::create([
 	      'vid' => $vocabularyMachineName,
 	      'name' => $term_name,
