@@ -1,0 +1,15 @@
+screen:
+  css:
+    theme:
+      assets/css/screen.css: {}
+
+print:
+  css:
+    theme:
+      assets/css/print.css: { media : print }
+
+user-account:
+  css:
+    theme:
+      assets/css/user-account.css: {}
+

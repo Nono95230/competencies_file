@@ -6,7 +6,7 @@ dependencies:
     - field.storage.paragraph.field_xp_pro_job_name
     - paragraphs.paragraphs_type.ptype_experience_pro
 _core:
-  default_config_hash: pMBiPqOLKvuddwcC5sN_FxwVVZOpxSV6U6ulC1FJLwo
+  default_config_hash: RFen8oFf6qEbnXuWxqn_bf75y6CJ9CI50pZaKd6l1kU
 id: paragraph.ptype_experience_pro.field_xp_pro_job_name
 field_name: field_xp_pro_job_name
 entity_type: paragraph

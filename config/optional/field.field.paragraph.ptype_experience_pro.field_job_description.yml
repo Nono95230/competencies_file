@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.ptype_experience_pro
   module:
     - text
+_core:
+  default_config_hash: dwyotU_YyqgN9gMS4-5ZRN6RIf0kRGeI23sqIFUpxw4
 id: paragraph.ptype_experience_pro.field_job_description
 field_name: field_job_description
 entity_type: paragraph

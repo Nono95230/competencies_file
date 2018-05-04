@@ -75,8 +75,23 @@
     'clearfix',
   ]
 %}
-<article{{ attributes.addClass(classes) }}>
-  <h1>Test ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest ArnoTest Arno</h1>
+
+<div id="print_bg">
+  <img id="print_logo" src="{{ path_logo }}" alt="logo">
+</div>
+<div id="user-profile-print-container" class="text-right">
+  <button id="user-profile-print-btn" class="btn btn-primary" onclick="window.print()">Imprimer</button>
+</div>
+
+<div id="print_new_element">
+  {{ new_element.field_competencies_file_dc }}
+  <div id="print_consultant_primary_info">
+    {{ new_element.field_competencies_file_consultant_identity }}
+    {{ content.field_competencies_file_jobtitle }}
+    {{ content.field_competencies_file_xp_year }}
+  </div>
+</div>
+<article id="user-profile-print-info" {{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if not page %}
     <h2{{ title_attributes }}>
@@ -100,3 +115,6 @@
   </div>
 
 </article>
+
+{{ attach_library('competencies_file/screen') }}
+{{ attach_library('competencies_file/print') }}

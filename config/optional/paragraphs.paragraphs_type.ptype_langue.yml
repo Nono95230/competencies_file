@@ -3,7 +3,7 @@ langcode: fr
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: zvFSmERE04f_jNaJSXE_oWMmwaRUbd-l48hPYFeBfVM
+  default_config_hash: Hj6Cr5d7uLzoUqg9RAtC78DdCQFsuRfp-yHppWNrFcA
 id: ptype_langue
 label: Langue
 icon_uuid: null

@@ -7,7 +7,7 @@ dependencies:
     - node
     - paragraphs
 _core:
-  default_config_hash: BXKIbDaFh5XGOT3rXceY-nivRMDpJ_N9dqwjixnkU6Y
+  default_config_hash: jDzBoI35UVdy_Nbkl8sJOt3e7YoEML4LhpYONNN5S-M
 id: node.field_competencies_file_skill
 field_name: field_competencies_file_skill
 entity_type: node

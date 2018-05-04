@@ -8,7 +8,7 @@ dependencies:
   module:
     - datetime
 _core:
-  default_config_hash: DwvGPsFSvFwcv7JnvXubMkV8_485E-L5iBN_TckBYxw
+  default_config_hash: EMYdQPbloZ79CoJVXgC_jOrUdXlqK7s269NHyLyte4o
 id: paragraph.ptype_experience_pro.field_xp_pro_date_end
 field_name: field_xp_pro_date_end
 entity_type: paragraph

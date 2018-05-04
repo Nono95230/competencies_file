@@ -7,7 +7,7 @@ dependencies:
     - field.field.paragraph.ptype_competence_technique.field_skill_section
     - paragraphs.paragraphs_type.ptype_competence_technique
 _core:
-  default_config_hash: G-AKJMtnMpRODfvagVhP-oFTh3ufO_Mt8w_9li6HUzY
+  default_config_hash: _sQY7zZfLkSZgHnLu3FkRxVvmPHOaFWsT39uU-KuE0M
 id: paragraph.ptype_competence_technique.default
 targetEntityType: paragraph
 bundle: ptype_competence_technique

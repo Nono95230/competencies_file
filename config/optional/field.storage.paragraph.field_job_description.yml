@@ -5,6 +5,8 @@ dependencies:
   module:
     - paragraphs
     - text
+_core:
+  default_config_hash: 6KszbNBib_NISpCUhXZ1E8k6dP0HeUcn9jecHFnk0Cw
 id: paragraph.field_job_description
 field_name: field_job_description
 entity_type: paragraph

@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - bootstrap_child
+_core:
+  default_config_hash: vvMbsMJ1RcEyfp1PI3P_kvqOz351qGUbuv4D3h3C9XM
 id: views_block__view_block_competencies_file_block_1
 theme: bootstrap_child
 region: content

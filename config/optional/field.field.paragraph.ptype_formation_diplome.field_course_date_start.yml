@@ -8,7 +8,7 @@ dependencies:
   module:
     - datetime
 _core:
-  default_config_hash: z2mfjQbxJVuyLlFyyNij06GXoP-NM4YswYlY4to_syk
+  default_config_hash: 3Dsw9TMsgXw9PS6z7LsI8w-A6MMQiomfU-1hPCGUNFc
 id: paragraph.ptype_formation_diplome.field_course_date_start
 field_name: field_course_date_start
 entity_type: paragraph

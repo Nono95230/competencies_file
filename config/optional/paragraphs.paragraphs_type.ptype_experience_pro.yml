@@ -3,7 +3,7 @@ langcode: fr
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: BWa85SuADoX0FZrxkLlTlW-EBWU9sGsi8N6afNeGdU4
+  default_config_hash: 8RsS2GbtUbKKkChWuNyN4JHTYi0eaIwEYdccXmUc1FQ
 id: ptype_experience_pro
 label: 'Expérience Professionnelle'
 icon_uuid: null

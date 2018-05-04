@@ -1,18 +1,16 @@
-uuid: 9b4bffed-b4ec-4e09-9269-02fded1edc55
+uuid: 158f3ced-1b57-41dd-9a02-5f827a7618f9
 langcode: fr
 status: true
 dependencies:
   module:
     - paragraphs
-_core:
-  default_config_hash: XzH26NBRfoBL7i8GIzyNBrhjaexhYKnidvatO9hdfCA
+    - text
 id: paragraph.field_course_description
 field_name: field_course_description
 entity_type: paragraph
-type: string_long
-settings:
-  case_sensitive: false
-module: core
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

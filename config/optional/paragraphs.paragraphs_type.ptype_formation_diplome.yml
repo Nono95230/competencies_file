@@ -3,7 +3,7 @@ langcode: fr
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: ss8BtJlPlBBpM5ypLjxhDJHz5rkC-6JiW-0A67tz7iA
+  default_config_hash: QArSYoCGKFOhYyFtZ9XcxOn11e2rs_wxxz2mXOFR7zI
 id: ptype_formation_diplome
 label: 'Formation & Diplôme'
 icon_uuid: null

@@ -3,7 +3,7 @@ langcode: fr
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 5w7Te-XG4tVr7QI1W4L-RTGhIPdhMsC9_e5BEDOJ1Pw
+  default_config_hash: e1K7nDO43F28zfaIC1pBzZwHSWmcGemkfkFcZN7LT9Y
 id: ptype_competence_technique
 label: 'Compétence technique'
 icon_uuid: null

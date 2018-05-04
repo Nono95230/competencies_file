@@ -15,7 +15,7 @@ hook_entity_type_insert:
   role: 'drupalien'
   paragraph_type: 'ptype_competence_technique'
   content_type: 'competencies_file'
-  content_title: 'Dossier de compétences - Nom Prénom'
+  content_title: 'Dossier de compétences - Prénom Nom'
   job_title: 'Développeur Drupal 8'
 ptype_competence_technique:
   1:

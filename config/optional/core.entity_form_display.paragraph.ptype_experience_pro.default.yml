@@ -15,7 +15,7 @@ dependencies:
     - datetime
     - text
 _core:
-  default_config_hash: tFPq3WiFl0w45G1TJZ2nwbXnByCdVYjDxcPIT9BX0NQ
+  default_config_hash: eQl-ds6S6Q2o9b09eYkokMWMM_gufQ_6qzsXvEzd1CM
 id: paragraph.ptype_experience_pro.default
 targetEntityType: paragraph
 bundle: ptype_experience_pro

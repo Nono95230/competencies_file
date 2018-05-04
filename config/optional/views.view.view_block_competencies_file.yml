@@ -9,7 +9,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: Dn2FMrfOHEHW0uKq72vqILs4OyBEDa6lJw33xEA63ME
+  default_config_hash: LqsfVqLnzZQaKCk3kWAWE9id3JOJg5NZ1D0Sa77-Wts
 id: view_block_competencies_file
 label: 'Dossier de compétences'
 module: views
@@ -129,7 +129,7 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: '<a href="{{ edit_node }}"></a>'
             make_link: false
             path: ''
             absolute: false
@@ -166,7 +166,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'Editer le Dossier de compétences'
+          text: Modifier
           output_url_as_text: false
           absolute: false
           entity_type: node

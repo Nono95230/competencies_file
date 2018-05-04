@@ -1,0 +1,43 @@
+/* line 1, ../scss/user-account.scss */
+.label {
+  color: black !important;
+}
+
+/* line 6, ../scss/user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row {
+  display: flex;
+  padding: 5px 5px 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+/* line 13, ../scss/user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row .views-field-view-node {
+  flex: 2.5;
+}
+/* line 15, ../scss/user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row .views-field-view-node a {
+  font-size: 18px;
+}
+/* line 19, ../scss/user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row .views-field-edit-node {
+  flex: 1;
+  text-align: right;
+}
+/* line 22, ../scss/user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row .views-field-edit-node a {
+  visibility: hidden;
+}
+/* line 24, ../scss/user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row .views-field-edit-node a:after {
+  visibility: visible;
+  background-image: url("../img/edit_pencil.png");
+  background-size: 24px 24px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  content: "";
+}
+/* line 34, ../scss/user-account.scss */
+#block-views-block-view-block-competencies-file-block-1 .views-row .views-field-edit-node a:hover:after {
+  background-image: url("../img/edit_pencil_hover.png");
+}

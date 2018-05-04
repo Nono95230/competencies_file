@@ -5,7 +5,7 @@ dependencies:
   module:
     - paragraphs
 _core:
-  default_config_hash: rwN9qMUORUkizs3DdxteRHcgdupvkbeDwK__LyJGvx0
+  default_config_hash: OFP0ztn4jXA-HpJPUyHvKy1YWDHpkF3imU50oOGWp5c
 id: paragraph.field_xp_pro_current_job
 field_name: field_xp_pro_current_job
 entity_type: paragraph

@@ -9,7 +9,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: emp3NdHMoV3JkeyaQvYQzytgWDokQLtx51u_pcjcPdQ
+  default_config_hash: RIZOHktriS4yopK_FRFXTRrHv1-tvmKfFWLBVDjYrgM
 id: paragraph.ptype_langue.default
 targetEntityType: paragraph
 bundle: ptype_langue
@@ -17,16 +17,16 @@ mode: default
 content:
   field_language_level:
     weight: 1
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_language_name:
-    weight: 2
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content

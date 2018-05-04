@@ -3,47 +3,47 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.paragraph.ptype_formation_diplome.field_course_current_formation
     - field.field.paragraph.ptype_formation_diplome.field_course_date_end
     - field.field.paragraph.ptype_formation_diplome.field_course_date_start
     - field.field.paragraph.ptype_formation_diplome.field_course_description
-    - field.field.paragraph.ptype_formation_diplome.field_course_techno_covered
     - paragraphs.paragraphs_type.ptype_formation_diplome
   module:
     - datetime
+    - text
 _core:
-  default_config_hash: fsQ27VayOPdvTujFG4O3CvWCMkuozpXZ7zHWAljfCnc
+  default_config_hash: rJPkBgFiMPVDH-9jyO-pVKmjcVpbYRbMJI2FYUFKM4s
 id: paragraph.ptype_formation_diplome.default
 targetEntityType: paragraph
 bundle: ptype_formation_diplome
 mode: default
 content:
+  field_course_current_formation:
+    weight: 0
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_course_date_end:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_course_date_start:
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_course_description:
-    weight: 2
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
-    region: content
-  field_course_techno_covered:
-    weight: 3
-    settings:
-      size: 80
-      placeholder: 'Html5, Css3, JavaScript'
-    third_party_settings: {  }
-    type: string_textfield
+    type: text_textarea
     region: content
 hidden:
   created: true

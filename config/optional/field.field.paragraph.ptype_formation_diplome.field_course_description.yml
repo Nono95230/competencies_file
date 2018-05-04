@@ -1,12 +1,12 @@
-uuid: abd0b7c3-4c3c-4651-beed-5963c2bb142b
+uuid: c8158fd4-1754-49a1-96d5-742d8d1decd6
 langcode: fr
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_course_description
     - paragraphs.paragraphs_type.ptype_formation_diplome
-_core:
-  default_config_hash: YYLID6-YzWGj6dIqSo0mB58ejK7AWJ2ts5EC8BuywAs
+  module:
+    - text
 id: paragraph.ptype_formation_diplome.field_course_description
 field_name: field_course_description
 entity_type: paragraph
@@ -18,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string_long
+field_type: text_long

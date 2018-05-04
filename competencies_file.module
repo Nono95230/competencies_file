@@ -86,28 +86,87 @@ function createParagraph($userId){
 
 	return $paraFormattedValue;
 }
-/*
+
+function competencies_file_theme_suggestions_alter(array &$suggestions, array $variables, $hook){
+  // Add Templates Suggestions for competencies file field
+  // of type entity reference revisions
+  if ( $hook == "field" && isset($variables['element']) ) {
+    $element = $variables['element'];
+    if ($element['#field_type'] == "entity_reference_revisions" && $element['#bundle'] == 'competencies_file') {
+      // Example : 'field--node--comptencies_file--field--ptype'
+      $suggestions[] = $hook.'__'.$element['#entity_type'].'__'.$element['#bundle'].'__'.$hook.'__'.'ptype';
+    }
+  }
+
+}
+
+
 function competencies_file_theme($existing, $type, $theme, $path){
-  // kint($existing);
-  // kint($type);
-  // kint($theme);
-  // kint($path);
+
     return array(
-        'bootstrap_child' => array(
-            'variables' => array(
-              'content' =>
-            ),
+        'node__competencies_file' => array(
             'template' => 'node--competencies-file',
+            'base hook' => 'node',
+            'variables' => array(
+              'path_logo' => '/'.$path.'/assets/img/logo_ausy.png'
+            )
+        ),
+        'paragraph__ptype_experience_pro' => array(
+            'template' => 'paragraph--ptype-experience-pro',
+            'base hook' => 'node'
+        ),
+        'paragraph__ptype_formation_diplome' => array(
+            'template' => 'paragraph--ptype-formation-diplome',
+            'base hook' => 'node'
+        ),
+        'field__node__competencies_file__field__ptype' => array(
+            'template' => 'field--node--competencies-file--field--ptype',
+            //'base hook' => 'node'
+            'base hook' => 'field'
         )
     );
 }
 
-function competencies_file_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
 
-    if(in_array('node__competencies_file', $suggestions)){
-        //kint($suggestions);
-        //die();
-        $suggestions[] = 'bootstrap_child';
-    }
+
+function competencies_file_preprocess_node(&$variables){
+
+  $contentType  = $variables['node']->getType();
+  $nodeTitle    = $variables['node']->getTitle();
+  $routeName    = \Drupal::routeMatch()->getRouteName();
+
+  if ( $contentType == 'competencies_file' && $routeName == 'entity.node.canonical' ) {
+    $limiter = ' - ';
+    $parts = explode($limiter,$nodeTitle);
+
+    $variables['new_element']['field_competencies_file_dc'] = array(
+      '#type' => 'html_tag',
+      '#tag' => 'h1',
+      '#value' => array_shift($parts),
+      '#attributes' => array(
+        'id' => 'print_dc'
+      )
+    );
+
+    $variables['new_element']['field_competencies_file_consultant_identity'] = array(
+      '#type' => 'html_tag',
+      '#tag' => 'p',
+      '#value' => implode($limiter, $parts),
+      '#attributes' => array(
+        'id' => 'print_identity'
+      )
+    );
+
+  }
+
 }
-*/
+
+function competencies_file_page_attachments(array &$page){
+
+  $routeName    = \Drupal::routeMatch()->getRouteName();
+
+  if ($routeName == 'entity.user.canonical') {
+    $page['#attached']['library'][] = 'competencies_file/user-account';
+  }
+
+}

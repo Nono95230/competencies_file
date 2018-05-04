@@ -66,10 +66,11 @@ content:
     weight: 2
     label: hidden
     settings:
-      timezone_override: ''
-      date_format: 'Y-m-d\TH:i:s'
+      future_format: 'Date invalide'
+      past_format: '@interval d''expérience'
+      granularity: 2
     third_party_settings: {  }
-    type: datetime_custom
+    type: datetime_time_ago
     region: content
   links:
     weight: 0

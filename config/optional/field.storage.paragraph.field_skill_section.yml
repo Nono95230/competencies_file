@@ -5,7 +5,7 @@ dependencies:
   module:
     - paragraphs
 _core:
-  default_config_hash: pTCRiXgJAN_Gw_63pS0Zk_bYFWP7pkHPobHFnBMaQp8
+  default_config_hash: 4_0A6e85NeJPj4sqQkxfHYS8OgvtVPcvwncbhFcLN4U
 id: paragraph.field_skill_section
 field_name: field_skill_section
 entity_type: paragraph

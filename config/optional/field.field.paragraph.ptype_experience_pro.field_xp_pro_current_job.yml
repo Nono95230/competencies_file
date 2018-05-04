@@ -6,13 +6,13 @@ dependencies:
     - field.storage.paragraph.field_xp_pro_current_job
     - paragraphs.paragraphs_type.ptype_experience_pro
 _core:
-  default_config_hash: jU6NKX8H6sJw9IZ1CON9WzeWwtjqX7b2lXDR574M6dk
+  default_config_hash: YpML1MFZt7Nk8bXUgkzP8LU03ZZSly65ZDYvJ1_nyBc
 id: paragraph.ptype_experience_pro.field_xp_pro_current_job
 field_name: field_xp_pro_current_job
 entity_type: paragraph
 bundle: ptype_experience_pro
 label: 'Poste actuel'
-description: "Cochez cette case si cette mission correspond à votre poste actuel.\r\nSi vous cochez cette case, alors vous n'avez pas de date de fin à renseigner"
+description: "Cochez cette case si cette mission est toujours d'actualité.\r\nSi vous cochez cette case, alors vous n'avez pas de date de fin à renseigner"
 required: false
 translatable: false
 default_value:
@@ -20,6 +20,6 @@ default_value:
     value: 0
 default_value_callback: ''
 settings:
-  on_label: Activé
-  off_label: Désactivé
+  on_label: 'true'
+  off_label: 'false'
 field_type: boolean

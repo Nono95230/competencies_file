@@ -15,6 +15,9 @@ function competencies_file_install(){
 
 
   $vocabularies = \Drupal\taxonomy\Entity\Vocabulary::loadMultiple();
+
+  // On créé des variables de config
+  // (cf. competencies_file.config.yml)
   $config = \Drupal::config('competencies_file.config')->get('hook_install');
 
   // Nom du vocabulaire

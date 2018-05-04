@@ -5,7 +5,7 @@ dependencies:
   config:
     - node.type.competencies_file
 _core:
-  default_config_hash: ZmClDNk2Y_HeAuJndSqAEA9KQhJHMfuGcOlwN-PM8bg
+  default_config_hash: f0F5pD8Y1GZGnFRrg4D7YLWdl5aGR4GJCGve7gBmS08
 id: node.competencies_file.promote
 field_name: promote
 entity_type: node

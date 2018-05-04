@@ -6,7 +6,7 @@ dependencies:
     - datetime
     - paragraphs
 _core:
-  default_config_hash: vY54CLdaua7hv1_9jibAibab-sV2_P8PBIzPXtQ7XOY
+  default_config_hash: CBLc2PfJKbe7siabbqxM1haqodfoJIbFgnYgHtVvlC0
 id: paragraph.field_course_date_end
 field_name: field_course_date_end
 entity_type: paragraph
